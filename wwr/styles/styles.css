@@ -246,6 +246,66 @@ main section img {
     text-align: right;
     padding-top: 0;
 }
+/* CONTACT US */
+main.contact-form {
+    margin: 98px 0;
+}
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    font-family: (--paragraph-font);
+    font-size: 20px;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+input,
+textarea {
+    font-family: (--paragraph-font);
+    font-size: 1em;
+    width: 280px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+.button {
+    padding-left: 90px;
+}
+button {
+    margin-left: 1.2em;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
 footer {
     background-color: #6f7364;
     padding: 25px 50px;
@@ -358,5 +418,26 @@ footer .social img {
     }
     .faq-title {
         margin-top: 20vh;
+    }
+    form {
+        max-width: 300px;
+        margin:  0 auto;
+    }
+    form li  {
+        display: block;
+    }
+    label {
+        width: 100%;
+        text-align: left;
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
+    .button {
+        padding-left: 0;
+    }
+    button {
+        margin-left: 0;
     }
 }
